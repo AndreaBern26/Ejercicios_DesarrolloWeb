@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "";
+    display: flex;
+    background-color: #212121;
+}
+
+
+/* focus */
+
+.input1{
+    margin-top: 2em; 
+    margin-left: 10em;
+    border-radius:50%;
+    width:40px;
+    cursor:pointer;
+    height:40px;
+    background-color:white;
+    outline:none;
+    background-image:url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-256.png");
+    background-size:30px;
+    background-position:center;
+    font-size:18px;
+    color:grey;
+    background-repeat:no-repeat;
+    border:1px solid grey;
+    transition-property:width, border-radius, background-position, padding-left;        /*  valores a  transformar */
+    transition-duration:0.5s;
+}
+
+.input1:focus{
+/*transformar*/
+  width:330px;
+  border-radius:5px;
+  cursor:text;
+  padding-left:40px;
+  padding-right:20px;
+  background-position:5px;
+
+}
+
+/* *********************************** */
+
+.send-message {
+  position: absolute;
+  top: 20em;
+  left: 20em;
+  transform: translate(-50%, -50%);  
+}
+
+span {
+  display: block;
+  margin: 5px;
+  color: #ff3d3d;
+  font-weight: 600;
+}
+input {
+  border: none;
+  border-bottom: 2px solid #ff3d3d;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  transition: background-color .5s linear;
+  color: #fff;
+}
+input:focus,
+input:valid
+{
+  background-color: #ff3d3d;
+}
+textarea {
+  border: 2px solid #ff3d3d;
+  min-width: 250px;
+  min-height: 150px;
+  max-width: 250px;
+  max-height: 250px;
+  outline: none;
+  transition: background-color .5s linear;
+  color: #fff;
+}
+textarea:focus,
+textarea:valid 
+{
+  background-color: #ff3d3d; 
+}
+
+/* *********************************** */
+
+h1 {
+  color: #cccccc;
+  text-shadow: 2px 1px #ffffff;
+  text-align: center;
+}
+
+.top-button-mount {
+  position: relative;
+  top: -40px;
+  left: 50%;
+  transform: translatex(-50%) rotatex(-30deg) skew(-2.5deg);
+  width: 220px;
+  height: 86px;
+  background-image: linear-gradient(to right, #dddddd 70%, #ffffff, #bbbbbb);
+  border: 1px solid #777777;
+  border-radius: 42px;
+}
+
+.bottom-button-mount {
+  position: relative;
+  top: 60px;
+  left: 50%;
+  transform: translatex(-50%) rotatex(-30deg) skew(-2.5deg);
+  width: 220px;
+  height: 86px;
+  background-image: linear-gradient(to right, #cccccc 70%, #ffffff, #aaaaaa);
+  border: 1px solid #777777;
+  border-radius: 42px;
+}
+
+button {
+  position: relative;
+  top: -135px;
+  left: 50%;
+  width: 200px;
+  padding: 14px;
+  background-color: rgb(255, 50, 50);
+  border: 10px solid rgb(255, 50, 50);
+  border-radius: 38px;
+  color: #ee0000;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000000;
+  box-shadow: 0 10px #cc0000, inset 1px 1px 10px #aa0000,
+    inset -1px -1px 10px #ffaaaa;
+  transform: translatex(-50%) rotatex(-30deg) skew(-2.5deg);
+  transition-duration: 0.2s;
+}
+
+button:focus {
+  box-shadow: 0 1px #00cc00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+    0 0 40px #00ff00, 0 10px 50px #00ff00, inset 1px 1px 10px #00aa00,
+    inset -1px -1px 10px #aaffaa;
+  transform: translatex(-50%) translatey(+9px) rotatex(-30deg) skew(-2.5deg);
+  background-color: rgb(0, 255, 0);
+  border: 10px solid rgb(0, 255, 0);
+  color: #00ee00;
+}
+
+.posicion{
+  position: absolute;
+  left: 40em;
+  bottom: 1em;
+}
